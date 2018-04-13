@@ -136,3 +136,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'attendrteam@gmail.com'
 EMAIL_HOST_PASSWORD = 'Tunir_1234'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
