@@ -4,7 +4,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
-from att_app.forms import RegistrationForm, FilterAttendance, VerifyForm
+from .forms import RegistrationForm, FilterAttendance, VerifyForm
 from django.contrib import messages
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -30,7 +30,7 @@ from django.template import loader
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
 from django.core.mail import send_mail
-from Project.settings import DEFAULT_FROM_EMAIL
+#from Project.settings import DEFAULT_FROM_EMAIL
 from django.views.generic import *
 from .forms import PasswordResetRequestForm,SetPasswordForm,ContactUsForm
 
